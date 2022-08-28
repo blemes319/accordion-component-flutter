@@ -7,26 +7,26 @@ List<Map<String, dynamic>> lista = [
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 1',
-    'color': Color(0xF1F0FE).withOpacity(1),
+    'color': Color.fromARGB(0, 47, 35, 204).withOpacity(1),
     'active': false,
   },
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 2',
-    'color': Color(0xFFF6ED).withOpacity(1),
+    'color': Color.fromARGB(0, 202, 124, 46).withOpacity(1),
     'active': true,
   },
   {
     'content':
         'Blá bláBlá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá blá',
     'title': 'Teste do teste 3',
-    'color': Color(0xEEF9FF).withOpacity(1),
+    'color': Color.fromARGB(0, 8, 123, 185).withOpacity(1),
     'active': true,
   },
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 4',
-    'color': Color(0xFFF0F3).withOpacity(1),
+    'color': Color.fromARGB(0, 150, 7, 36).withOpacity(1),
     'active': false,
   }
 ];

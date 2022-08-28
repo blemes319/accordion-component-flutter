@@ -25,7 +25,7 @@ class Accordion extends StatelessWidget {
               children: [
                 Text(
                   '${title}',
-                  style: const TextStyle(fontSize: 16, color: Colors.black),
+                  style: const TextStyle(fontSize: 16, color: Colors.white),
                 ),
                 SizedBox(
                   height: 10,
@@ -37,7 +37,7 @@ class Accordion extends StatelessWidget {
                       child: Text(
                         '${content}',
                         style:
-                            const TextStyle(fontSize: 12, color: Colors.black),
+                            const TextStyle(fontSize: 12, color: Colors.white),
                       ),
                     ))
               ],
