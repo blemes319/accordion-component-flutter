@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
           children: [
             ...lista.map((list) {
               return Accordion(
-                showContent: list['active'] as bool,
+                list['id'] as int,
+                active: list['active'] as bool,
                 content: list['content'] as String,
                 title: list['title'] as String,
                 color: list['color'],

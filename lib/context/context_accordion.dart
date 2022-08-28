@@ -32,10 +32,8 @@ List<Map<String, dynamic>> lista = [
   }
 ];
 
-// List<Map<String, dynamic>> change({int value= 0}) {
-//   return lista.map((list) {
-//     if(list){
-
-//     }
-//   });
-// }
+change({int value = 0}) {
+  return lista.map((list) {
+    print(list);
+  });
+}

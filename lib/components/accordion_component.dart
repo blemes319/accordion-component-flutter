@@ -3,14 +3,16 @@ import 'package:flutter/material.dart';
 
 class Accordion extends StatelessWidget {
   String? content, title;
-  late bool showContent;
+  late bool active;
   Color? color;
+  int id;
 
-  Accordion({this.showContent = false, this.content, this.title, this.color});
+  Accordion(this.id,
+      {this.active = false, this.content, this.title, this.color});
 
   @override
   Widget build(BuildContext context) {
-    print(showContent);
+    print(active);
     return Container(
         margin: const EdgeInsets.only(bottom: 20),
         width: 500,
@@ -19,7 +21,9 @@ class Accordion extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            IconButtonAccordion(),
+            IconButtonAccordion(
+              value: id,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -27,11 +31,11 @@ class Accordion extends StatelessWidget {
                   '${title}',
                   style: const TextStyle(fontSize: 16, color: Colors.white),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Visibility(
-                    visible: showContent,
+                    visible: active,
                     child: Expanded(
                       flex: 0,
                       child: Text(
