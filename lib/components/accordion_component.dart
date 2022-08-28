@@ -13,21 +13,22 @@ class Accordion extends StatelessWidget {
     return Container(
       color: color,
       width: 150,
-      height: 100,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             '${title}',
-            style: TextStyle(fontSize: 16),
+            style: const TextStyle(fontSize: 16),
           ),
           Visibility(
-            visible: showContent,
-            child: Text(
-              '${content}',
-              style: TextStyle(fontSize: 12),
-            ),
-          )
+              visible: showContent,
+              child: Expanded(
+                flex: 0,
+                child: Text(
+                  '${content}',
+                  style: const TextStyle(fontSize: 12),
+                ),
+              ))
         ],
       ),
     );
