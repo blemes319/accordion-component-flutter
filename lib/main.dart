@@ -7,21 +7,25 @@ List<Map<String, dynamic>> lista = [
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 1',
+    'color': Colors.redAccent,
     'active': false,
   },
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 2',
+    'color': Colors.blueAccent,
     'active': false,
   },
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 3',
+    'color': Colors.orange,
     'active': true,
   },
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 4',
+    'color': Colors.greenAccent,
     'active': false,
   }
 ];
@@ -49,6 +53,7 @@ class MyApp extends StatelessWidget {
                 showContent: list['active'] as bool,
                 content: list['content'] as String,
                 title: list['title'] as String,
+                color: list['color'],
               );
             })
           ],
