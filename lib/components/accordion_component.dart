@@ -19,7 +19,7 @@ class Accordion extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const IconButtonAccordion(),
+            IconButtonAccordion(),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
