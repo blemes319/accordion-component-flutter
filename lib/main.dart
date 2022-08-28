@@ -36,6 +36,23 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: darkBlue,
       ),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Center(
+            child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ...lista.map((list) {
+              return Accordion(
+                showContent: list['active'] as bool,
+                content: list['content'] as String,
+                title: list['title'] as String,
+              );
+            })
+          ],
+        )),
+      ),
     );
   }
 }
