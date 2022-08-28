@@ -17,7 +17,8 @@ List<Map<String, dynamic>> lista = [
     'active': false,
   },
   {
-    'content': 'Blá blá blá blá blá blá blá blá ',
+    'content':
+        'Blá blá blá blá blá blá blá blá Blá blá blá blá blá blá blá blá Blá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá blá',
     'title': 'Teste do teste 3',
     'color': Colors.orange,
     'active': true,

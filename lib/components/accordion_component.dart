@@ -11,8 +11,9 @@ class Accordion extends StatelessWidget {
   Widget build(BuildContext context) {
     print(showContent);
     return Container(
-      color: color,
-      width: 150,
+      width: 300,
+      decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(5), color: color),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
