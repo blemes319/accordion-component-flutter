@@ -7,26 +7,26 @@ List<Map<String, dynamic>> lista = [
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 1',
-    'color': Colors.redAccent,
+    'color': Colors.redAccent.shade400.withOpacity(0.9),
     'active': false,
   },
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 2',
-    'color': Colors.blueAccent,
+    'color': Colors.blueAccent.shade400.withOpacity(0.9),
     'active': true,
   },
   {
     'content':
-        'Blá blá Blá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá blá',
+        'Blá bláBlá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá blá',
     'title': 'Teste do teste 3',
-    'color': Colors.orangeAccent,
+    'color': Colors.orangeAccent.shade400.withOpacity(0.9),
     'active': true,
   },
   {
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 4',
-    'color': Colors.greenAccent,
+    'color': Colors.greenAccent.shade400.withOpacity(0.9),
     'active': false,
   }
 ];
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                 title: list['title'] as String,
                 color: list['color'],
               );
-            })
+            }),
           ],
         )),
       ),

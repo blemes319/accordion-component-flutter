@@ -12,10 +12,12 @@ class Accordion extends StatelessWidget {
   Widget build(BuildContext context) {
     print(showContent);
     return Container(
+        margin: const EdgeInsets.only(bottom: 20),
         width: 500,
         decoration:
             BoxDecoration(borderRadius: BorderRadius.circular(5), color: color),
         child: Row(
+          mainAxisSize: MainAxisSize.min,
           children: [
             const IconButtonAccordion(),
             Column(
