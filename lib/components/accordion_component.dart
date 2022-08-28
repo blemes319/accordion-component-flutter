@@ -25,7 +25,10 @@ class Accordion extends StatelessWidget {
               children: [
                 Text(
                   '${title}',
-                  style: const TextStyle(fontSize: 16),
+                  style: const TextStyle(fontSize: 16, color: Colors.black),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Visibility(
                     visible: showContent,
@@ -33,7 +36,8 @@ class Accordion extends StatelessWidget {
                       flex: 0,
                       child: Text(
                         '${content}',
-                        style: const TextStyle(fontSize: 12),
+                        style:
+                            const TextStyle(fontSize: 12, color: Colors.black),
                       ),
                     ))
               ],
