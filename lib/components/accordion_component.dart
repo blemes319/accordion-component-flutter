@@ -1,3 +1,4 @@
+import 'package:accordion_component_flutter/components/icon_button_component.dart';
 import 'package:flutter/material.dart';
 
 class Accordion extends StatelessWidget {
@@ -11,27 +12,31 @@ class Accordion extends StatelessWidget {
   Widget build(BuildContext context) {
     print(showContent);
     return Container(
-      width: 300,
-      decoration:
-          BoxDecoration(borderRadius: BorderRadius.circular(5), color: color),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            '${title}',
-            style: const TextStyle(fontSize: 16),
-          ),
-          Visibility(
-              visible: showContent,
-              child: Expanded(
-                flex: 0,
-                child: Text(
-                  '${content}',
-                  style: const TextStyle(fontSize: 12),
+        width: 500,
+        decoration:
+            BoxDecoration(borderRadius: BorderRadius.circular(5), color: color),
+        child: Row(
+          children: [
+            const IconButtonAccordion(),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '${title}',
+                  style: const TextStyle(fontSize: 16),
                 ),
-              ))
-        ],
-      ),
-    );
+                Visibility(
+                    visible: showContent,
+                    child: Expanded(
+                      flex: 0,
+                      child: Text(
+                        '${content}',
+                        style: const TextStyle(fontSize: 12),
+                      ),
+                    ))
+              ],
+            ),
+          ],
+        ));
   }
 }

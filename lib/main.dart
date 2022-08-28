@@ -14,13 +14,13 @@ List<Map<String, dynamic>> lista = [
     'content': 'Blá blá blá blá blá blá blá blá ',
     'title': 'Teste do teste 2',
     'color': Colors.blueAccent,
-    'active': false,
+    'active': true,
   },
   {
     'content':
-        'Blá blá blá blá blá blá blá blá Blá blá blá blá blá blá blá blá Blá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá blá',
+        'Blá blá Blá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá bláBlá blá blá blá blá blá blá blá',
     'title': 'Teste do teste 3',
-    'color': Colors.orange,
+    'color': Colors.orangeAccent,
     'active': true,
   },
   {
