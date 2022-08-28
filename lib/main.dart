@@ -9,6 +9,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  ContextAccordionComponent contextAccordion = ContextAccordionComponent();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ...lista.map((list) {
+            ...contextAccordion.lista.map((list) {
               return Accordion(
                 list['id'] as int,
                 active: list['active'] as bool,

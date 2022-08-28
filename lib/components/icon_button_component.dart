@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 
 class IconButtonAccordion extends StatelessWidget {
   late int value;
+  ContextAccordionComponent contextAccordion = ContextAccordionComponent();
 
   IconButtonAccordion({Key? key, this.value = 0}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () => change(value: value),
+      onPressed: () => contextAccordion.change(),
       icon: const Icon(Icons.add),
       color: Colors.white,
     );
