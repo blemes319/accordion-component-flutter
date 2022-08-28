@@ -8,7 +8,7 @@ class IconButtonAccordion extends StatelessWidget {
     return IconButton(
       onPressed: () {},
       icon: const Icon(Icons.add),
-      color: Colors.black,
+      color: Colors.white,
     );
   }
 }
