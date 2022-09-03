@@ -34,10 +34,19 @@ class ContextAccordionComponent {
   ];
 
   change({int value = 0}) {
-    // return lista.map((list) {
-    //   print(list.values);
-    // });
+    return lista.map((acc) {
+      if (acc['id'] == value) {
+        acc['active'] = acc['active']!;
+        return acc;
+      } else {
+        return acc;
+      }
+    });
+  }
 
-    print('teste');
+  newListGenerator(int value) {
+    lista = change(value: value);
+    print(lista);
+    return lista;
   }
 }

@@ -10,7 +10,7 @@ class IconButtonAccordion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () => contextAccordion.change(),
+      onPressed: () => contextAccordion.newListGenerator(value),
       icon: const Icon(Icons.add),
       color: Colors.white,
     );
