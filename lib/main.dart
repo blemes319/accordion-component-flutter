@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ...contextAccordion.lista.map((list) {
+            ...contextAccordion.listaDinamic.value.map((list) {
               return Accordion(
                 list['id'] as int,
                 active: list['active'] as bool,

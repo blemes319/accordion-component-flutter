@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:mobx/mobx.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 
 class ContextAccordionComponent {
+  var listaDinamic;
+
+  ContextAccordionComponent() {
+    listaDinamic = Observable(lista);
+  }
+
   List<Map<String, dynamic>> lista = [
     {
       'id': 1,
@@ -34,7 +42,7 @@ class ContextAccordionComponent {
   ];
 
   change({int value = 0}) {
-    return lista.map((acc) {
+    return listaDinamic.map((acc) {
       if (acc['id'] == value) {
         acc['active'] = acc['active']!;
         return acc;
@@ -45,8 +53,8 @@ class ContextAccordionComponent {
   }
 
   newListGenerator(int value) {
-    lista = change(value: value);
-    print(lista);
-    return lista;
+    listaDinamic = change(value: value);
+    print(listaDinamic);
+    return listaDinamic;
   }
 }
